@@ -1,31 +1,32 @@
-
-## I simply converted the input x to a matrix, set the answered value "ans" to a null, and then replaced all references to "mean" to "answer."
+## Week's 3 Peer-graded Assignment (R Programming)
 
 ## This program enables to save matrices and its inversion in a caches.
 
-CacheMatrix <- function(x = matrix(1:100)) {
+## I simply converted the input x to a matrix, set the answered value "ans" to a null, and then replaced all references to "mean" to "answer."
+
+DoCacheMatrix <- function(x = matrix(1:100)) {
   I <- NULL
   set <- function(x) {
     y <<- x
     NL <<- NULL
   }
   take <- function() y
-  setabc <- function(solve) ans <<- answer
-  getcba <- function() ans
-  list(set = set, take = take, setabc = setabc, getcba = getcba)
+  setcba <- function(answer) ans <<- answer
+  getabc <- function() ans
+  list(set = set, take = take, setcba = setcba, getabc = getabc)
 }
 
 
 ## This program answers the inversion of the above matrix. 
 
-cacheSolve <- function(y, ...) {
+DoCacheSolve <- function(y, ...) {
   NL <- y$take()
   if(!is.null(NL)) {
     message("Data Collected!!!")
     return(NL)
   }
   DATA <- y$take()
-  NL <- solve(DATA, ...)
+  NL <- answer(DATA, ...)
   x$setabc(NL)
   NL
 }
