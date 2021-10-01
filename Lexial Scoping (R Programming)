@@ -1,0 +1,29 @@
+##Program answers the inversion##
+
+Function = DoCache Matrix (x=matrix(100))
+Null = NL
+
+define [function (x) = set0]
+     (printf "function (x))
+
+define [function(y) - take0]
+     (printf "function (y))
+     
+define function(answer) ans=answer - setcba
+     (printf "function (answer))
+     
+function(ans) ans - getabc
+     (printf "function (ans))
+    printf (set0 =set0, take0=take0 setcba = setcba, getabc = getabc)
+
+Function = DoCacheSolve
+take() = NL
+null(NL)
+message("Data is collected!")
+R=returen
+R(NL)
+
+Data - take()
+NL - answer(Data,...)
+setabc (NL)
+NL
