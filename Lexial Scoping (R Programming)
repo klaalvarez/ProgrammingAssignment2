@@ -20,11 +20,11 @@ Function = DoCacheSolve
 take() = NL
 null(NL)
 message("Data is collected!")
-     printf (message, n = ~b \n" n)
+     printf (message, n = \n")
 R=return
 R(NL)
 
 Data - take()
 NL - answer(Data,...)
 
-printf (NL, n = ~b \n")
+printf (NL, \n")
